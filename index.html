@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Google Table Converter</title>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/interact.min.js"></script>
+    <link rel="stylesheet" href="css/google-table-converter.css">
+</head>
+<body>
+    <div id="main">
+        <div id="intro">
+            <h1 id="title">Google Table Converter</h1>
+            <div id="intro-text">Use this page to <b>convert a Google Spreadsheet selection to a responsive HTML &lt;table&gt;</b>. The converter retains border, background, and text styling. To get started, paste a portion of a Google Spreadsheet into the "Input" box below:</div>
+        </div>
+        <div id="input" class="io">
+            <div class="io-label">Input 
+                <span class="sublabel">Replace the table below with a table of your own</span>
+            </div>
+            <div class="inner clipped" contenteditable>
+            <!-- demo table -->
+            <table cellspacing="0" cellpadding="0" dir="ltr" border="1" style="table-layout:fixed;font-size:13px;font-family:arial,sans,sans-serif;border-collapse:collapse;border:1px solid #ccc"><colgroup><col width="169"><col width="158"></colgroup><tbody><tr style="height:29px;"><td style="padding: 2px 3px; vertical-align: bottom; border-width: 1px; border-style: solid dotted solid solid; border-color: rgb(0, 0, 0) rgb(183, 183, 183) rgb(0, 0, 0) rgb(0, 0, 0); font-size: 120%; font-weight: bold; background-color: rgb(243, 243, 243);" data-sheets-value="[null,2,&quot;Name&quot;]">Name</td><td style="padding: 2px 3px; vertical-align: bottom; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(0, 0, 0); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); font-size: 120%; font-weight: bold; background-color: rgb(243, 243, 243);" data-sheets-value="[null,2,&quot;Animal&quot;]">Animal</td></tr><tr style="height:29px;"><td style="padding: 2px 3px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(0, 0, 0); font-size: 120%; vertical-align: middle; border-right-width: 1px; border-right-style: dotted; border-right-color: rgb(183, 183, 183); background-color: rgb(201, 218, 248);" data-sheets-value="[null,2,&quot;Evita&quot;]">Evita</td><td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); font-size: 120%; vertical-align: middle; background-color: rgb(201, 218, 248);" data-sheets-value="[null,2,&quot;Hamster&quot;]">Hamster</td></tr><tr style="height:29px;"><td style="padding: 2px 3px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(0, 0, 0); font-size: 120%; vertical-align: middle; border-right-width: 1px; border-right-style: dotted; border-right-color: rgb(183, 183, 183);" data-sheets-value="[null,2,&quot;Flappy&quot;]">Flappy</td><td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); font-size: 120%; vertical-align: middle;" data-sheets-value="[null,2,&quot;Dog&quot;]">Dog</td></tr><tr style="height:29px;"><td style="padding: 2px 3px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(0, 0, 0); font-size: 120%; vertical-align: middle; border-right-width: 1px; border-right-style: dotted; border-right-color: rgb(183, 183, 183); background-color: rgb(201, 218, 248);" data-sheets-value="[null,2,&quot;Helen&quot;]">Helen</td><td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); font-size: 120%; vertical-align: middle; background-color: rgb(201, 218, 248);" data-sheets-value="[null,2,&quot;Cat&quot;]">Cat</td></tr><tr style="height:29px;"><td style="padding: 2px 3px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(0, 0, 0); font-size: 120%; vertical-align: middle; border-right-width: 1px; border-right-style: dotted; border-right-color: rgb(183, 183, 183);" data-sheets-value="[null,2,&quot;Tim&quot;]">Tim</td><td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); font-size: 120%; vertical-align: middle;" data-sheets-value="[null,2,&quot;Cat&quot;]">Cat</td></tr><tr style="height:29px;"><td style="padding: 2px 3px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(0, 0, 0); font-size: 120%; vertical-align: middle; border-right-width: 1px; border-right-style: dotted; border-right-color: rgb(183, 183, 183); background-color: rgb(201, 218, 248);" data-sheets-value="[null,2,&quot;Barbara&quot;]">Barbara</td><td style="padding: 2px 3px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); font-size: 120%; vertical-align: middle; background-color: rgb(201, 218, 248);" data-sheets-value="[null,2,&quot;Cat&quot;]">Cat</td></tr></tbody></table>
+            </div>
+        </div>
+        <div id="output-preview" class="io">
+            <div class="io-label">Preview
+                <span class="sublabel">Hover over the table and drag the red line to preview different container widths. Defaults to mobile-ish width.</span>
+            </div>
+            <div class="inner">
+                <div class="preview-container"></div>
+            </div>
+        </div>
+        <div id="output-raw" class="io">
+            <div class="io-label">Cleaned HTML
+                <span class="sublabel">Copy this text into your CMS or what-have-you</span>
+            </div>
+            <textarea readonly class="inner clipped"></textarea>
+        </div>
+    </div>
+    <script src="js/google-table-converter.js"></script> 
+    <a href="https://github.com/jsvine/google-table-converter"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+</body>
+</html>
