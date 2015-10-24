@@ -56,7 +56,7 @@ body {
 }
 
 .inner.clipped {
-    height: 10em;
+    height: 13em;
     overflow-y: scroll;
     border-bottom: 1px solid #999;
 }
